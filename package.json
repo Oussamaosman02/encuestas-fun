@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "turbo": "next dev --turbo",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -15,6 +16,7 @@
   },
   "devDependencies": {
     "eslint": "8.27.0",
-    "eslint-config-next": "13.0.3"
+    "eslint-config-next": "13.0.3",
+    "standard": "17.0.0"
   }
 }
