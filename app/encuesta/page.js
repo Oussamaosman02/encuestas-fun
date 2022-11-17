@@ -5,7 +5,7 @@ export default function Encuesta () {
   return (
     <div className={css.container}>
       <h1>Encuesta de Satisfacción</h1>
-      <h2>Vamos a hacerte uns preguntas</h2>
+      <h2>Vamos a hacerte unas preguntas</h2>
       <p>
         Te pedimos completa seriedad y honestidad a la
         hora de responder a las cuestiones.
@@ -30,14 +30,14 @@ export default function Encuesta () {
         <h3>¿Qué opinas de que yo, tu madre, yo cuando tu madre?</h3>
         <textarea rows='4' cols='50' type='text' placeholder='Escribe que opinas' />
         <h3>Del 1 al 10, ¿qué tan positivo crees que es el acto con tu madre?</h3>
-        <input className={css.input} type='number' max={10} min={0} placeholder='incica un valor' />
+        <input className={css.input} type='number' max={10} min={0} placeholder='Pon una nota' />
         <h3>Puntos positivos de tu madre</h3>
-        <textarea rows='4' cols='50' type='text' placeholder='Escrbe lo positivo' />
+        <textarea rows='4' cols='50' type='text' placeholder='Escribe lo positivo' />
         <h3>Puntos negativos de tu madre</h3>
-        <textarea rows='4' cols='50' type='text' placeholder='Escrbe lo negativo' />
+        <textarea rows='4' cols='50' type='text' placeholder='Escribe lo negativo' />
         <h3>Puntos a mejorar de tu madre</h3>
-        <textarea rows='4' cols='50' type='text' placeholder='Da propuestas para mejorar' />
-        <h3>En comparación con otras madres, la tuya es:</h3>
+        <textarea rows='4' cols='50' type='text' placeholder='Ofrece propuestas para mejorar' />
+        <h3>En comparación con otras, tu madre es:</h3>
         <select className={css.input} defaultValue='La mejor'>
           <option>La mejor</option>
           <option>Una muy buena</option>
