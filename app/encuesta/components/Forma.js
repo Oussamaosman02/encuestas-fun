@@ -1,9 +1,8 @@
 'use client'
-import { useRouter } from 'next/navigation'
+// import { useRouter } from 'next/navigation'
 
 export default function Forma ({ children, num, destruct }) {
-  const rut = useRouter()
-  function handleSubmit (e) {
+  async function handleSubmit (e) {
     e.preventDefault()
     const obj = {}
     const arreglo = destruct
@@ -15,8 +14,14 @@ export default function Forma ({ children, num, destruct }) {
         obj[nombre] = valor
       )
     })
-    rut.push('/')
-    alert('Gracias por contestar')
+    console.log(obj)
+    await fetch('/api', {
+      method: 'POST',
+      headers: {
+        'Content-type': 'application/json'
+      },
+      body: JSON.stringify(obj)
+    })
   }
   return (
     <form onSubmit={e => handleSubmit(e)}>
